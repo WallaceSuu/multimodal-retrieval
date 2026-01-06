@@ -1,0 +1,36 @@
+# =========================
+# Python
+# =========================
+__pycache__/
+*.py[cod]
+*.pyo
+*.pyd
+*.so
+*.egg-info/
+.env
+.venv/
+venv/
+
+# =========================
+# ML / Model Artifacts
+# =========================
+*.pt
+*.pth
+*.ckpt
+*.onnx
+checkpoints/
+checkpoints_*/
+
+runs/
+wandb/
+data/
+datasets/
+*.zip
+*.tar
+*.tar.gz
+logs/
+outputs/
+results/
+*.log
+
+

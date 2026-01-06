@@ -1,0 +1,38 @@
+{
+  "augmentation": {
+    "final_train_loss": 0.2235977194791463,
+    "final_val_loss": 0.8078359055424867,
+    "best_val_loss": 0.8063477955081246,
+    "total_time": 4427.911899328232
+  },
+  "layer_norm": {
+    "final_train_loss": 0.10260216537812616,
+    "final_val_loss": 0.8750480481758419,
+    "best_val_loss": 0.8540445113370541,
+    "total_time": 3725.4474680423737
+  },
+  "batch_norm": {
+    "final_train_loss": 0.10735067175244059,
+    "final_val_loss": 0.8723596076955908,
+    "best_val_loss": 0.8597581698018101,
+    "total_time": 3733.5175552368164
+  },
+  "dropout": {
+    "final_train_loss": 0.11011157522952184,
+    "final_val_loss": 0.8799547982074526,
+    "best_val_loss": 0.8597182988413709,
+    "total_time": 3782.5999398231506
+  },
+  "warmup": {
+    "final_train_loss": 0.09700479703891632,
+    "final_val_loss": 0.874643125246636,
+    "best_val_loss": 0.86452830890893,
+    "total_time": 3793.9766061306
+  },
+  "all": {
+    "final_train_loss": 0.24029248903905465,
+    "final_val_loss": 0.8142935047743348,
+    "best_val_loss": 0.8122562876331948,
+    "total_time": 3997.861878156662
+  }
+}

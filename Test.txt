@@ -1,0 +1,39 @@
+# Basic evaluation on a checkpoint (full validation set)
+python evaluate_clip.py --checkpoint checkpoints_baseline/best_model.pt
+
+# Evaluation with subset for faster testing (5000 samples)
+python evaluate_clip.py --checkpoint checkpoints_baseline/best_model.pt --subset_size 5000
+
+# Evaluation with custom output directory
+python evaluate_clip.py --checkpoint checkpoints_baseline/best_model.pt --output_dir evaluation_results_baseline
+
+# Evaluation with custom batch size
+python evaluate_clip.py --checkpoint checkpoints_baseline/best_model.pt --batch_size 64
+
+# Evaluate augmentation configuration
+python evaluate_clip.py --checkpoint checkpoints_augmentation/best_model.pt --subset_size 5000
+
+# Evaluate layer normalization configuration
+python evaluate_clip.py --checkpoint checkpoints_layer_norm/best_model.pt --subset_size 5000
+
+# Evaluate batch normalization configuration
+python evaluate_clip.py --checkpoint checkpoints_batch_norm/best_model.pt --subset_size 5000
+
+# Evaluate dropout configuration
+python evaluate_clip.py --checkpoint checkpoints_dropout/best_model.pt --subset_size 5000
+
+# Evaluate warmup configuration
+python evaluate_clip.py --checkpoint checkpoints_warmup/best_model.pt --subset_size 5000
+
+# Evaluate all modifications configuration
+python evaluate_clip.py --checkpoint checkpoints_all/best_model.pt --subset_size 5000
+
+# Run ablation study evaluation (compares all configurations)
+python ablation_study.py --subset_size 5000
+
+# Interactive text-to-image search (enter queries in console)
+python text_to_image_search.py --checkpoint checkpoints_baseline/best_model.pt
+
+# Interactive search with custom options
+python text_to_image_search.py --checkpoint checkpoints_baseline/best_model.pt --top_k 10 --save_dir search_results
+

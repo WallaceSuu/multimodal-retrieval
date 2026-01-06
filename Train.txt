@@ -1,0 +1,29 @@
+# Training Commands for CLIP Fine-tuning
+
+# Basic training with baseline configuration (no modifications)
+python train_clip_improved.py --config baseline
+
+# Training with data augmentation
+python train_clip_improved.py --config augmentation
+
+# Training with layer normalization
+python train_clip_improved.py --config layer_norm
+
+# Training with batch normalization
+python train_clip_improved.py --config batch_norm
+
+# Training with dropout regularization
+python train_clip_improved.py --config dropout
+
+# Training with learning rate warmup
+python train_clip_improved.py --config warmup
+
+# Training with all modifications combined
+python train_clip_improved.py --config all
+
+# Run full ablation study (trains all configurations automatically)
+python train_clip_improved.py --config ablation
+
+# Alternative: Use original training script (baseline only)
+python train_clip.py
+
