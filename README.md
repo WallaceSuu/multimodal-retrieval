@@ -38,9 +38,29 @@ This project implements **multimodal retrieval**: given a text query, retrieve t
 
 ## Demo / Screenshots
 
-<!-- Add screenshots here: e.g. training curves, retrieval examples, ablation comparison plot -->
+### Training: best validation loss across ablation configs
 
-\_Placeholder: add a screenshot of training curves (`checkpoints\__/training_curves.png`), a text-to-image retrieval example, and/or ablation comparison (`ablation_comparison.png`) if you generate them.\*
+Comparison of best validation loss for baseline and improved configurations (augmentation, layer norm, dropout, warmup, and combined).
+
+![Best validation loss comparison across ablation configs](https://raw.githubusercontent.com/WallaceSuu/multimodal-retrieval/main/loss_curves/best_val_loss_comparison.png "Best Val Loss — Ablation Comparison")
+
+### Evaluation: image classification
+
+The model scores an input image against candidate class labels (e.g. "a person", "an animal", "food") in the shared embedding space.
+
+![Image classification — class scores](https://raw.githubusercontent.com/WallaceSuu/multimodal-retrieval/main/evaluation_results/classification_3690.png "Image classification scores")
+
+![Image classification — another example](https://raw.githubusercontent.com/WallaceSuu/multimodal-retrieval/main/evaluation_results/classification_3620.png "Image classification example")
+
+### Text-to-image retrieval
+
+Top retrieved images for natural-language queries (e.g. "sport", "animal") from the validation set.
+
+![Text-to-image retrieval: sport](https://raw.githubusercontent.com/WallaceSuu/multimodal-retrieval/main/evaluation_results/text_to_image_sport.png "Text-to-Image: 'sport'")
+
+![Text-to-image retrieval: animal](https://raw.githubusercontent.com/WallaceSuu/multimodal-retrieval/main/evaluation_results/text_to_image_animal.png "Text-to-Image: 'animal'")
+
+*All images linked from the repo; replace paths if your run outputs differ. Use [blob URLs](https://github.com/WallaceSuu/multimodal-retrieval/blob/main/evaluation_results/) to open files on GitHub.*
 
 ---
 
